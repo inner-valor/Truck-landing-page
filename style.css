@@ -4,12 +4,48 @@
     box-sizing: border-box;
 }
 body {
+    color: black;
     background-color: rgb(77, 77, 77);
+    font-size: 100%;
 }
 
-#header header {
+#web-banner {
+    border-bottom: 5px solid black;
+    height: 90px;
+    min-height: 60px;
+}
+
+#web-banner header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: 100%;
+}
+
+#logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    min-width: 100px;
+}
+
+#logo img, #logo h1 {
+    width: 100%;
+}
+    
+
+#logo img {
+    position: absolute;
+}
+
+#logo h1 {
+    line-height: 50px;
+    font-size: 40px;
+}
+
+#sign-ups {
+    display: flex;
+    align-items: center;
 }
 
