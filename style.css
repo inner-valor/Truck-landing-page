@@ -4,13 +4,25 @@
     box-sizing: border-box;
 }
 body {
+    position: relative;
     color: black;
     background-color: rgb(77, 77, 77);
     font-size: 100%;
 }
 
+/* header */
+
+.top-banner {
+    width: 100%;
+    text-align: center;
+    background-color: #3ab5ff;
+}
+
+.top-banner a {
+    text-decoration: none;
+}
+
 #web-banner {
-    border-bottom: 5px solid black;
     height: 90px;
     min-height: 60px;
 }
@@ -26,8 +38,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    width: 25%;
-    min-width: 100px;
+    min-width: 268px;
 }
 
 #logo img, #logo h1 {
@@ -41,9 +52,9 @@ body {
 
 #logo h1 {
     position: absolute;
-    top: 2px;
+    top: 0px;
     left: 2px;
-    font-size: 34px;
+    font-size: 40px;
 }
 
 #sign-ups {
