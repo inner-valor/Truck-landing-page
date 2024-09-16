@@ -57,55 +57,99 @@ body {
     font-size: 40px;
 }
 
-#sign-ups {
+#register {
     display: flex;
     align-items: center;
 }
 
+#register a {
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #ddd;
+}
+
+#register a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+
 /* main */
-
-#truck-types {
-    position: relative;
-    display: flex;
-    height: auto;
-    border-bottom: 5px solid black;
-}
-
-#truck-types div{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 20%;
-}
-
-#truck-types div:nth-child(2n) p {
-    margin-top: 50px;
-}
-
-#truck-types div:nth-child(1) p, #truck-types div:nth-child(5) p {
-    margin-top: 90px;
-}
-
-#truck-types p {
-    position: relative;
-    text-align: center;
-    font-weight: 500;
-    font-size: 2.5vw;
-    z-index: 1;
-}
-
-.truck-img {
-    width: 100%;
-}
 
 main {
     display: flex;
 }
 
-#truck-info, #picked-img {
+#truck-nav {
+    display: flex;
+
+}
+
+.truck-nav-content {
     position: relative;
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    height: 150px;
+    width: 20%;
+    
+}
+
+.truck-nav-content img {
+    max-height: 90px;
+    min-height: 70px;
+    max-width: 149px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#featured {
+    height: auto;
+    width: 100%;
+}
+
+.featured-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.4em;
+}
+
+.featured-box:nth-child(2n + 1) {
+    background-color: #373737;
+}
+
+.featured-box div {
+    margin: 50px;
+}
+
+.img-box {
+    flex: 1 0 auto;
+    height: 150px;
+    width: 250px;
+}
+
+.img-box img {
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#main {
+    margin-top: 20px;
+    border-top: 5px solid black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 50%;
     padding: 30px;
 }
