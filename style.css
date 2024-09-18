@@ -6,7 +6,7 @@
 body {
     position: relative;
     color: black;
-    background-color: rgb(77, 77, 77);
+    background-color: #4d4d4d;
     font-size: 100%;
 }
 
@@ -78,8 +78,6 @@ body {
     text-decoration: underline;
 }
 
-
-
 /* main */
 
 main {
@@ -87,12 +85,14 @@ main {
 }
 
 #truck-nav {
+    position: relative;
     display: flex;
-
+    width: 100%;
+    height: 150px;
 }
 
 .truck-nav-content {
-    position: relative;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -100,20 +100,35 @@ main {
     padding: 5px;
     height: 150px;
     width: 20%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     
 }
 
+.truck-nav-content:hover, .truck-nav-content:focus {
+    background-color: #7c7c7c;
+    cursor: pointer;
+}
+
 .truck-nav-content img {
-    max-height: 90px;
+    max-height: 100px;
     min-height: 70px;
     max-width: 149px;
     width: 100%;
     overflow: hidden;
 }
 
+hr {
+    margin: 0;
+    background-color: #262626;
+    
+    
+}
+
 #featured {
     height: auto;
     width: 100%;
+    background-color: #373737;
 }
 
 .featured-box {
@@ -121,15 +136,16 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
     font-size: 1.4em;
 }
 
-.featured-box:nth-child(2n + 1) {
-    background-color: #373737;
+.featured-box:nth-child(2n) {
+    background-color: #4d4d4d;
 }
 
 .featured-box div {
-    margin: 50px;
+    margin: 15px;
 }
 
 .img-box {
