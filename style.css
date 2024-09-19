@@ -78,7 +78,7 @@ body {
     text-decoration: underline;
 }
 
-/* main */
+/* main content */
 
 main {
     display: flex;
@@ -120,9 +120,7 @@ main {
 
 hr {
     margin: 0;
-    background-color: #262626;
-    
-    
+    background-color: #262626;  
 }
 
 #featured {
@@ -137,6 +135,7 @@ hr {
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    padding: 20px;
     font-size: 1.4em;
 }
 
@@ -148,17 +147,15 @@ hr {
     margin: 15px;
 }
 
-.img-box {
-    flex: 1 0 auto;
-    height: 150px;
-    width: 250px;
+.featured-truck {
+    width: 100%;
 }
 
-.img-box img {
-    height: 100%;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: white;
+.featured-truck img {
+    height: auto;
+    max-width: 100%;
+    margin-top: 5px;
+
 }
 
 #main {
