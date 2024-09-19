@@ -161,7 +161,7 @@ hr {
 
 #truck-info {
     display: flex;
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid black;
 }
 
 .container {
@@ -196,22 +196,9 @@ hr {
 
 }
 
-.img-box {
-    position: absolute;
-    display: flex;
-    bottom: 0;
-    height: 80px;
-    width: 100%;
-}
-
-.img-box img {
-    height: 100%;
-    width: 33%;
-}
-
 #picked-img {
     padding: 0;
-    border: 20px solid black;
+    border: 1px solid black;
     background-color: white;
 }
 
@@ -227,8 +214,13 @@ hr {
 }
 
 #stats p {
-    margin: 0 10px;
+    padding: 4px;
 }
+
+#stats p:last-child {
+    display: none;
+}
+
 
 
 /* action card */
