@@ -5,13 +5,9 @@
 }
 body {
     position: relative;
-    color: black;
+    color: whitesmoke;
     background-color: #4d4d4d;
     font-size: 100%;
-}
-
-.hide {
-    display: none;
 }
 
 /* header */
@@ -116,6 +112,56 @@ body {
     max-width: 149px;
     width: 100%;
     overflow: hidden;
+}
+
+.nav-info {
+    display: flex;
+    width: 100%;
+}
+
+.nav-info div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.nav-img {
+    padding: 5px;
+    margin: 2px;
+    border-right: 2px solid black;
+    flex: 0 1 132px;
+}
+
+.nav-info img {
+    float: left;
+    height: 150px;
+    width: 100%;
+}
+
+.nav-text {
+    flex: 1 1 180px;
+    padding: 5px;
+}
+
+.nav-text h1 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.nav-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly !important;
+    padding: 5px;
+    flex: 0 2 200px;
+    
+}
+
+.nav-btn button {
+    padding: 10px;
+    cursor: pointer;
 }
 
 hr {
@@ -248,3 +294,7 @@ hr {
     background-color: gainsboro;
 }
 
+
+.hide {
+    display: none;
+}

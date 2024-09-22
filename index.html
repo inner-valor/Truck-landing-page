@@ -28,23 +28,37 @@
 
     <section id="main">
         <div id="truck-nav">
-            <div class="truck-nav-content">
+            <div class="nav-info">
+                <div class="nav-img">
+                    <img src="img/big-rig-tiny.png" alt="pickup-truck">
+                </div>
+                <div class="nav-text">
+                    <h1>pick up</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="nav-btn">
+                    <button onclick="cancelInfo()">cancel</button>
+                    <button>see more</button>
+                </div>
+            </div>
+
+            <div class="truck-nav-content hide">
                 <p>Pick ups</p>
                 <img class="truck-img" src="img/pickup-truck.png" alt="pickup-truck">
             </div>
-            <div class="truck-nav-content">
+            <div class="truck-nav-content hide">
                 <p>Mini trucks</p>
                 <img class="truck-img" src="img/mini-truck-tiny.png" alt="mini-truck">
             </div>
-            <div class="truck-nav-content">
+            <div class="truck-nav-content hide">
                 <p style="position: relative; right: 5px;">Big rigs</p>
                 <img class="truck-img" src="img/big-rig-tiny.png" alt="big-rig">
             </div>
-            <div class="truck-nav-content">
+            <div class="truck-nav-content hide">
                 <p>Dump Trucks</p>
                 <img class="truck-img" src="img/dump-truck-tiny.png" alt="dump-truck">
             </div>
-            <div class="truck-nav-content">
+            <div class="truck-nav-content hide">
                 <p>Ballast tractors</p>
                 <img class="truck-img" src="img/Ballast-tractors-tiny.png" alt="Ballast-tractors">
             </div>
@@ -119,10 +133,7 @@
             </div>
 
             <div class="container" id="picked-img">
-                <div>
-                    <img src="img/1200px-2017_Ford_F-350_Crew_Cab_front_4.28.18.jpg" alt="">
-                </div>
-
+                <img src="img/1200px-2017_Ford_F-350_Crew_Cab_front_4.28.18.jpg" alt="">
                 <div id="stats">
                     <p class="statistic fuel-capacity">Fuel Tank capacity: <span id="fuel">34</span> gal</p>
                     <p class="statistic horsepower">Horsepower: <span id="hp">485</span> HP</p>
