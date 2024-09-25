@@ -7,7 +7,6 @@ body {
     position: relative;
     color: whitesmoke;
     background-color: #4d4d4d;
-    font-size: 100%;
 }
 
 /* header */
@@ -182,7 +181,14 @@ hr {
     align-items: center;
     text-align: center;
     padding: 20px;
-    font-size: 1.4em;
+    font-size: 20px;
+    font-size: 5vw;
+}
+
+.featured-box h1 {
+    font-size: 25px;
+    font-size: 5vw;
+    font-weight: bold;
 }
 
 .featured-box:nth-child(2n) {
@@ -221,6 +227,13 @@ hr {
 
 .info {
     margin-top: 15px;
+    font-size: 20px;
+    font-size: 3.5vw;
+}
+
+.info h1 {
+    font-size: 30px;
+    font-size: 4vw;
 }
 
 .img-container {
@@ -294,6 +307,10 @@ hr {
     background-color: gainsboro;
 }
 
+#footer {
+    background-color: #262626;
+}
+
 
 .hide {
     display: none;
@@ -303,14 +320,64 @@ hr {
 
     .featured-box {
         flex-direction: row;
+        font-size: 20px;
+    }
+    
+    .featured-box h1 {
+        font-size: 3.2vw;
     }
 
     .featured-box:nth-child(2n) .featured-truck {
         order: 2;
     }
 
+    .info {
+        font-size: 2.2vw;
+    }
+
+    .info h1 {
+        font-size: 3vw;
+    }
+
     #stats p:last-child {
         display: block;
+    }
+
+    .card {
+        height: 300px;
+    }
+
+    .card-content {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+
+        
+    }
+
+    .card-content div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-content div:first-child {
+        margin-left: 70px;
+    }
+
+    .card-content div:last-child {
+        margin-top: 0;
+    }
+
+    .card-content form {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .card-content form input {
+        margin-bottom: 30px;
     }
 }
 
@@ -331,4 +398,21 @@ hr {
         border-radius: 10px
 
     }
+
+    .card-content div:first-child {
+        margin-left: 6%;
+    }
+
+    .card {
+        min-width: 500px;
+        width: 26%;
+        height: 35%;
+        margin: 5px auto;
+
+    }
+
+    .card-content form input {
+        margin-bottom: 20px;
+    }
+
 }
